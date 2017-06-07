@@ -51,5 +51,6 @@
 	<classpathentry kind="lib" path="C:/Users/Luan-/Downloads/Compressed/apache-log4j-2.8.2-bin/apache-log4j-2.8.2-bin/log4j-web-2.8.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Luan-/Downloads/Compressed/apache-log4j-2.8.2-bin/apache-log4j-2.8.2-bin/log4j-web-2.8.2-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Luan-/Downloads/Compressed/apache-log4j-2.8.2-bin/apache-log4j-2.8.2-bin/log4j-web-2.8.2-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Luan-/Downloads/Compressed/sonar-runner-dist-2.4/sonar-runner-2.4/lib/sonar-runner-dist-2.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
