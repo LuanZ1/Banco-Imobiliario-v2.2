@@ -188,3 +188,41 @@ Joga Jogador3
  Compro Imovel:Comercio
 Escrevendo Estatisticas...
 Acabou Jogo
+COMEÇA O JOGO
+Criando Tabuleiro...
+Lendo arquivo Jogadas...
+Tirando '%'
+Tirando ';'
+Jogadas Armazenadas no Vetor...
+Adicionando Jogadores...
+Lendo arquivo Jogadas...
+Tirando '%'
+Tirando ';'
+Jogadas Armazenadas no Vetor...
+Carrega Variaveis para Inicio Jogo...
+Começa Jogo...
+Joga Jogador1
+ Compro Imovel:Hotel
+Joga Jogador2
+ Compro Imovel:Residencia
+Joga Jogador3
+ Compro Imovel:Industria
+Joga Jogador1
+Pagou aluguel para o jogador 3
+Joga Jogador2
+Pagou aluguel para o jogador 3
+Joga Jogador3
+ Compro Imovel:Hospital
+Joga Jogador1
+Pagou aluguel para o jogador 3
+Joga Jogador2
+Joga Jogador3
+ Compro Imovel:Comercio
+Joga Jogador1
+Pagou aluguel para o jogador 1
+Joga Jogador2
+Pagou aluguel para o jogador 1
+Joga Jogador3
+ Compro Imovel:Comercio
+Escrevendo Estatisticas...
+Acabou Jogo
