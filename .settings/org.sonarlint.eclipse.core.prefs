@@ -1,0 +1,3 @@
+autoEnabled=true
+eclipse.preferences.version=1
+extraProperties=test\= http\://localhost\:9000/

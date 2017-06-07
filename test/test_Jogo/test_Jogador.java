@@ -5,6 +5,11 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import Jogo.Jogador;
+/**
+*Banco Imobiliário 
+*@author Luan Felipe e Talles Souza
+*@version 2.0
+*/
 
 public class test_Jogador {
 

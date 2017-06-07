@@ -1,22 +1,50 @@
 package Estatistica;
 
 
+
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
 import Jogo.CarregarJogo;
 import Jogo.Jogador;
+import Log.ArquivoLog;
+import org.apache.log4j.Logger;
+
+/**
+*Banco Imobiliário 
+*@author Luan Felipe e Talles Souza
+*@version 2.0
+*
+* @see EscreverEstatisticas Método que escreverá as estatísticas através da chamada do método CarregarJogo(),
+* que será instanciado num novo CarregarJogo() e do método ComecaJogo().
+* 
+* Utiliza a chamada da lista de jogadores getListajogador() e o número de rodadas do jogo
+* getNumeroRodadas().
+* Cada atributo das estatísticas será escrito em uma das 7 strings (cada uma representando
+* um dado específico característico do jogo.)
+* 
+*/
 
 public class EscreverEstatisticas {
 	
 	
+	private static final Logger logger = Logger.getLogger(EscreverEstatisticas.class);
 	private ArrayList<Jogador> listajogador = new ArrayList<Jogador>();
-
+    
 	
-	public void colocarNoArquivo(){
+	/**
+	 * O método escreve as estatísticas no arquivo Estatística.
+	 * @throws FileNotFoundException Retorna a exceção do Log lançado.
+	 */
+	public void colocarNoArquivo() throws FileNotFoundException{
+		if (logger.isDebugEnabled()) {
+			logger.debug("entering colocarNoArquivo()");
+		}
 		CarregarJogo c = new CarregarJogo();
 		c.ComecaJogo();
+		
 		listajogador=c.getListajogador();
 		String str1;
 		str1="1: "+c.getNumeroRodadas();
@@ -52,22 +80,47 @@ public class EscreverEstatisticas {
 	    }
 	    
 		escrever(str1+"\r\n"+str2+"\r\n"+str3+"\r\n"+str4+"\r\n"+str5+"\r\n"+str6+"\r\n"+str7);
+		if (logger.isDebugEnabled()) {
+			logger.debug("exiting colocarNoArquivo()");
+		}
 		
 	}
 	
-	public void escrever(String str){		
+
+	 /** 
+	 * 
+	 *
+	 * @param str str String que será escrita no arquivo de Estatísticas.
+	 * @throws FileNotFoundException Exceção para tratar a leitura do arquivo Estatística.txt, caso ocorra um erro na 
+	 * leitura, a seguinte mensagem será mostrada: "Falha ao escrever no arquivo"
+	 */
+	
+	public void escrever(String str) throws FileNotFoundException{		
 		
+		if (logger.isDebugEnabled()) {
+			logger.debug("entering escrever(String)");
+			logger.debug("str: \"" + str + "\"");
+		}
 		try {
 			FileWriter fr = new FileWriter("Estatistica.txt");
 			fr.write(str);			
 			fr.close();
+			new ArquivoLog("Escrevendo Estatisticas...");
 			
 		} catch (IOException e) {
 			
-			System.out.println("Falha ao escrever no arquivo");
+			
+			new ArquivoLog("Falha ao escrever no arquivo");
 			e.printStackTrace();
 			
 		}
+		if (logger.isDebugEnabled()) {
+			logger.debug("exiting escrever()");
+		}
+		
+		
 	}
+	
+	
 
 }

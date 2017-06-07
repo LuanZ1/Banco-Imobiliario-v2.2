@@ -1,12 +1,15 @@
 package test_TiposImoveis;
 
 import static org.junit.Assert.*;
-
-
-
 import org.junit.Test;
 
 import TiposImoveis.Imovel;
+
+/**
+*Banco Imobiliário 
+*@author Luan Felipe e Talles Souza
+*@version 2.0
+*/
 
 public class test_Imovel {
 
