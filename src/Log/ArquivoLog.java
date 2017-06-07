@@ -11,6 +11,16 @@ import java.io.IOException;
 import java.util.Vector;
 import org.apache.log4j.Logger;
 
+import Tabuleiro.Tabuleiro;
+
+/**
+*Banco Imobiliário 
+*@author Luan Felipe e Talles Souza
+*@version 2.0
+*
+*@see ArquivoLog Método utilizado para a geração dos Logs de acordo com a Execução
+*do projeto.
+*/
 public class ArquivoLog {
 	
 	private static final Logger logger = Logger.getLogger(ArquivoLog.class);
@@ -21,14 +31,22 @@ public class ArquivoLog {
 	BufferedWriter bufferedwriter;
 	
 	
-
+	/**
+	 * 
+	 * @param erros Especifica caso erros ocorram na geração do Log
+	 * 
+	 * @throws FileNotFoundException Lança a Exceção caso ocorra erro no Log
+	 */
 	public ArquivoLog(String erros) throws FileNotFoundException{
 		
 		EscreverLog(erros);
 		
 	}
 	
-	
+	/**
+	 * 
+	 * @param erros Especifica os erros.
+	 */
 	private void EscreverLog(String erros) {
 		
 		if (logger.isDebugEnabled()) {
