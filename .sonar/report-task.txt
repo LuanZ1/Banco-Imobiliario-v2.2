@@ -1,6 +1,0 @@
-projectKey=org.sonarqube:sonarqube-scanner
-serverUrl=http://localhost:9000
-serverVersion=6.4.0.25310
-dashboardUrl=http://localhost:9000/dashboard/index/org.sonarqube:sonarqube-scanner
-ceTaskId=AVyC14cC9tQI5l6kDnEf
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AVyC14cC9tQI5l6kDnEf
