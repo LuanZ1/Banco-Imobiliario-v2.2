@@ -168,6 +168,7 @@ public class Tabuleiro {
 	
 	/**
 	 * Método para adicionar o Imóvel do tipo Hospital no Tabuleiro.
+	 * 
 	 * @param k Indica a Posição no Tabuleiro
 	 * @param j Indica o Jogador
 	 * 
@@ -181,6 +182,7 @@ public class Tabuleiro {
 	
 	/**
 	 * Método para adicionar o Imóvel do tipo Vazio no Tabuleiro.
+	 * 
 	 * @param k Indica a Posição no Tabuleiro
 	 * @param j Indica o Jogador
 	 * 
